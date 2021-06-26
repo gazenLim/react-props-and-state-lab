@@ -1,7 +1,19 @@
 import React from 'react'
 
 class Pet extends React.Component {
+constructor(){
+  super()
+}
+
+
+
+
+
+
   render() {
+    const {pet, isAdopted} = this.props
+    const {name,type,age,weight, gender}= pet
+
     return (
       <div className="card">
         <div className="content">
